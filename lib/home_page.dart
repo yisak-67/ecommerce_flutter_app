@@ -24,9 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
-        actions: <Widget>[
-
-        ],
+        actions: <Widget>[],
       ),
       body: Center(
         child: Column(
@@ -42,7 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.pushNamed(context, '/signup');
               },
-              child: const Text('Signup', style: TextStyle(color: Colors.black)),
+              child:
+                  const Text('Signup', style: TextStyle(color: Colors.black)),
             ),
             const Text(
               'You have pushed the button this many times:',
